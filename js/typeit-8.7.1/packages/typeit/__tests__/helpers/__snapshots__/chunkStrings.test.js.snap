@@ -1,0 +1,383 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Parses HTML tag at beginning of string. 1`] = `
+[
+  <strong>
+    H
+    e
+    l
+    l
+    o
+    !
+  </strong>,
+  H,
+  e,
+  l,
+  l,
+  o,
+  !,
+   ,
+  T,
+  h,
+  i,
+  s,
+   ,
+  i,
+  s,
+   ,
+  s,
+  o,
+  m,
+  e,
+   ,
+  t,
+  e,
+  x,
+  t,
+   ,
+  w,
+  i,
+  t,
+  h,
+   ,
+  H,
+  T,
+  M,
+  L,
+   ,
+  a,
+  t,
+   ,
+  t,
+  h,
+  e,
+   ,
+  b,
+  e,
+  g,
+  i,
+  n,
+  n,
+  i,
+  n,
+  g,
+  .,
+]
+`;
+
+exports[`Parses HTML tag at end of string. 1`] = `
+[
+  T,
+  h,
+  i,
+  s,
+   ,
+  i,
+  s,
+   ,
+  s,
+  o,
+  m,
+  e,
+   ,
+  t,
+  e,
+  x,
+  t,
+   ,
+  w,
+  i,
+  t,
+  h,
+   ,
+  H,
+  T,
+  M,
+  L,
+   ,
+  a,
+  t,
+   ,
+  t,
+  h,
+  e,
+   ,
+  <em>
+    e
+    n
+    d
+    .
+  </em>,
+  e,
+  n,
+  d,
+  .,
+]
+`;
+
+exports[`Parses HTML tag with attributes. 1`] = `
+[
+  T,
+  h,
+  i,
+  s,
+   ,
+  s,
+  t,
+  r,
+  i,
+  n,
+  g,
+   ,
+  h,
+  a,
+  s,
+   ,
+  a,
+  n,
+   ,
+  <strong
+    class="strong-class"
+    data-whatever="data-att"
+    id="strong-id"
+  >
+    e
+    l
+    e
+    m
+    e
+    n
+    t
+  </strong>,
+  e,
+  l,
+  e,
+  m,
+  e,
+  n,
+  t,
+   ,
+  w,
+  i,
+  t,
+  h,
+   ,
+  a,
+  t,
+  t,
+  r,
+  i,
+  b,
+  u,
+  t,
+  e,
+  s,
+  .,
+]
+`;
+
+exports[`Parses multiple HTML tags. 1`] = `
+[
+  H,
+  e,
+  l,
+  l,
+  o,
+  ,,
+   ,
+  t,
+  h,
+  i,
+  s,
+   ,
+  i,
+  s,
+   ,
+  s,
+  o,
+  m,
+  e,
+   ,
+  <strong>
+    b
+    o
+    l
+    d
+  </strong>,
+  b,
+  o,
+  l,
+  d,
+   ,
+  t,
+  e,
+  x,
+  t,
+  ,,
+   ,
+  a,
+  n,
+  d,
+   ,
+  s,
+  o,
+  m,
+  e,
+   ,
+  <i>
+    i
+    t
+    a
+    l
+    i
+    c
+    i
+    z
+    e
+    d
+  </i>,
+  i,
+  t,
+  a,
+  l,
+  i,
+  c,
+  i,
+  z,
+  e,
+  d,
+   ,
+  t,
+  e,
+  x,
+  t,
+  .,
+]
+`;
+
+exports[`Parses normal string correctly. 1`] = `
+[
+  H,
+  e,
+  l,
+  l,
+  o,
+  ,,
+   ,
+  t,
+  h,
+  i,
+  s,
+   ,
+  i,
+  s,
+   ,
+  m,
+  y,
+   ,
+  s,
+  t,
+  r,
+  i,
+  n,
+  g,
+  .,
+]
+`;
+
+exports[`Parses single HTML tag. 1`] = `
+[
+  H,
+  e,
+  l,
+  l,
+  o,
+  ,,
+   ,
+  t,
+  h,
+  i,
+  s,
+   ,
+  i,
+  s,
+   ,
+  s,
+  o,
+  m,
+  e,
+   ,
+  <strong>
+    b
+    o
+    l
+    d
+  </strong>,
+  b,
+  o,
+  l,
+  d,
+   ,
+  t,
+  e,
+  x,
+  t,
+  .,
+]
+`;
+
+exports[`maybeChunkStringAsHtml() Should correctly transform non-HTML string as character objects. 1`] = `
+[
+  A,
+   ,
+  &lt;,
+  e,
+  m,
+  &gt;,
+  f,
+  a,
+  n,
+  c,
+  y,
+  &lt;,
+  /,
+  e,
+  m,
+  &gt;,
+   ,
+  s,
+  t,
+  r,
+  i,
+  n,
+  g,
+  .,
+]
+`;
+
+exports[`maybeChunkStringAsHtml() Should return noderized string when setting is enabled. 1`] = `
+[
+  A,
+   ,
+  <em>
+    f
+    a
+    n
+    c
+    y
+  </em>,
+  f,
+  a,
+  n,
+  c,
+  y,
+   ,
+  s,
+  t,
+  r,
+  i,
+  n,
+  g,
+  .,
+]
+`;
